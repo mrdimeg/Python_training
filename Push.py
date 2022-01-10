@@ -1,7 +1,7 @@
 
-from os import rename
+
 from git import Repo
-from git.exc import GitError
+
 
 PATH_OF_GIT_REPO = r'/Users/dmitrirodioskin/Documents/git_repositories/test_sa/'  # make sure .git folder is properly configured
 COMMIT_MESSAGE = 'comment from python script'
