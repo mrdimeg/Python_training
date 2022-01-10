@@ -26,7 +26,7 @@ def git_push_github():
         origin = repo.remote(name='origin_github')
         origin.push()
     except:
-        print('Some error occured on Github while pushing the code')
+        print('Some error occured on Github while pushing the code!')
  
 git_push_github()
 git_push_gitlab()
