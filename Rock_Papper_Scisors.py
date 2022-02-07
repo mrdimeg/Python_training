@@ -9,16 +9,16 @@ proceed = True
 while proceed:
 
     choice, weight = random.choice(list(variants.items()))
-    print(choice)
-    selection = input('Select R, P, S: ')
+    
+    selection = str.upper(input('Select R, P, S: '))
     if variants[selection] > variants[choice]:
-        print('You Won')
+        print(f'You Won. My choice was {choice}!')
 
     elif variants[selection] == variants[choice]:
-        print('Equal')
+        print(f'Equal. My choice was {choice}!')
 
     else:
-        print('You lost')
+        print(f'You lost. My choice was {choice}!')
 
     proceed = input('Want to play more? [y/n]').lower() == 'y'
 
