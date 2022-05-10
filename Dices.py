@@ -1,6 +1,3 @@
-
-
-
 lst = [(1, 2), (3, 4), (5, 6)]
 
 
@@ -11,13 +8,10 @@ def calc_dice_scores(lst):
         return res
     duplicates()
 
-    if duplicates() != True:
+    if duplicates() = False:
         final_list = sum(map(sum, lst))
         return final_list
     else:
         return 0
-
-
-
 
 print(calc_dice_scores(lst))
